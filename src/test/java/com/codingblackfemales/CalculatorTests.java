@@ -23,4 +23,13 @@ public class CalculatorTests {
 
         assertEquals(-2, difference);
     }
+    @Test
+    @DisplayName("multiply two numbers")
+    public void testMultiplication() {
+        final Integer product = Calculator.multiply(2, 4);
+
+        assertEquals(8, product);
+    }
+
+
 }
