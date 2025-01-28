@@ -23,6 +23,7 @@ public class CalculatorTests {
 
         assertEquals(-2, difference);
     }
+
     @Test
     @DisplayName("multiply two numbers")
     public void testMultiplication() {
@@ -31,5 +32,12 @@ public class CalculatorTests {
         assertEquals(8, product);
     }
 
+    @Test
+    @DisplayName("divide two numbers")
+    public void testDivision() {
+        final Double divident = Calculator.divide(2, 4);
+
+        assertEquals(0.5, divident);
+    }
 
 }
